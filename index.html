@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <!-- REMIXICONS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>RGB Blending</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="header" id="header">
+        <nav class="nav container">
+            <!-- logo -->
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-circle">AI</span>
+                <span class="nav__logo-name">colormix</span>
+            </a>
+            <!-- menu -->
+            <div class="nav__menu" id="nav_logo">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#rgb" class="nav__link">RGB</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#cmyk" class="nav__link">CMYK</a>
+                    </li>
+                </ul>
+            </div>
+     </nav>
+    </div>
+    
+    <!-- MAIN -->
+    <main class="main" id="main">
+        <div class="home" id="home">
+            <div class="home container">
+                <section class="info">
+                    <p>
+                        <b>Color mixer</b> is program to chcek two color palletes. 
+                    </p>
+                </section>
+                
+                <section class="rgb-model description">
+                    <p>
+                        <b>RGB (Red, Green, Blue)</b><br>
+                        RGB is a color model where each color is represented by a combination of three primary colors: red (R), green (G), and blue (B). Each of these components can have values ranging from 0 to 255. The combination of these three colors in different proportions allows for a wide range of colors. For example, full intensity of red,
+                        without green and blue, gives us the color red (RGB 255, 0, 0).
+                    </p>
+                </section>
+                <section class="cmyk-model description">
+                    <p>
+                        <b>CMYK (Cyan, Magenta, Yellow, Key/Black)</b><br>
+                        CMYK is a color model primarily used in printing. It consists of four primary colors: cyan (C), magenta (M), yellow (Y), and black (K). Unlike the RGB model, in CMYK, color is achieved by subtracting colors from white light. Each component in CMYK represents the percentage of coverage of a given area on paper by that color. For example, full intensity of the red hue is achieved by not covering the area with cyan, magenta, and yellow (CMYK 0%, 100%, 100%, 0%).
+                    </p>
+                </section>
+
+                <a href="#rgb" class="home__scroll">
+                    <div class="home__scroll-box">
+                        <i class="ri-arrow-down-fill"></i>
+                    </div>
+                    <span class="home__scroll-text">
+                       RGB
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="rgb" id="rgb">
+            <div class = "rgb container" id="rgb__container">
+
+                <div class="color__box" id="color__box-red">
+                
+                </div>
+                <div class="sign">+</div>
+                <div class="color__box" id="color__box-green">
+
+                </div>
+                <div class="sign">+</div>
+                <div class="color__box" id="color__box-blue">
+
+                </div>
+                <div class="sign">=</div>
+                <div class="color__box" id="color__box-result-rgb">
+                    
+                </div>
+
+            </div>
+
+            <a href="#cmyk" class="rgb_scroll">
+                <div class="home__scroll-box">
+                    <i class="ri-arrow-down-fill"></i>
+                </div>
+                <span class="home__scroll-text">
+                        CMYK
+                </span>
+            </a>
+        </div>
+
+
+        <div class="cmyk" id="cmyk">
+            <div class="cmyk container" id="cmyk__container">
+                <div class="color__box" id="color__box-cyan"></div>
+                <div class="sign">+</div>
+                <div class="color__box" id="color__box-magenta"></div>
+                <div class="sign">+</div>
+                <div class="color__box" id="color__box-yellow"></div>
+                <div class="sign">+</div>
+                <div class="color__box" id="color__box-black"></div>
+                <div class="sign">=</div>
+                <div class="color__box" id="color__box-result-cmyk"></div>
+            </div>
+
+            
+        </div>
+    </main>
+    <!-- FOOTER -->
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
